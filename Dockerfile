@@ -9,8 +9,7 @@ COPY . .
 
 RUN addgroup -S hoyolab && adduser -S -G hoyolab hoyolab && \
     mkdir -p /app/data && \
-    chown -R hoyolab:hoyolab /app \
-    mv /app/default.config.js /app/config.js
+    chown -R hoyolab:hoyolab /app
 
 USER hoyolab
 
